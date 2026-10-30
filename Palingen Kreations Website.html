@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Palingen Kreations | Building Brands. Creating Impact.</title>
+<meta name="description" content="Palingen Kreations is a Nairobi creative and digital marketing agency: branding, social media, digital marketing, copywriting, web design, content creation, graphic design and consultations.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+<style>
+:root{--bg:#fff;--surface:#f4f2fb;--text:#0a0b2e;--muted:#55587a;--line:#ddd9ee;--purple:#6d28d9;--gold:#f5a700;--navy:#050625;--on-navy:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070830;--surface:#0e0f45;--text:#f2f1ff;--muted:#a9abd1;--line:#24266b}}
+:root[data-theme="dark"]{--bg:#070830;--surface:#0e0f45;--text:#f2f1ff;--muted:#a9abd1;--line:#24266b}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;font-family:Poppins,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:60}
+img{max-width:100%}
+a{color:inherit}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:8px 5%}
+header img{height:46px;width:auto;border-radius:6px;display:block}
+nav{display:flex;gap:22px}
+nav a{text-decoration:none;font-size:.9rem;font-weight:600;opacity:.9}
+nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid #ffffff55;color:#fff;border-radius:8px;padding:6px 12px;font:inherit}
+.btn{display:inline-block;background:var(--gold);color:#1a1200;font-weight:700;text-decoration:none;padding:12px 24px;border-radius:999px;border:0;cursor:pointer;font:inherit;font-weight:700;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:#fff;border:2px solid #fff}
+section{padding:80px 5%;max-width:1150px;margin:auto}
+h2{font-size:clamp(1.6rem,4vw,2.3rem);margin:0 0 10px}
+.sub{color:var(--muted);max-width:640px;margin:0 0 32px}
+.tag{color:var(--gold);font-weight:700;letter-spacing:.15em;font-size:.8rem;text-transform:uppercase}
+#hero{max-width:none;min-height:88vh;display:flex;align-items:center;color:#fff;position:relative;overflow:hidden;background:var(--navy)}
+#bgfx{position:absolute;inset:0;transition:background 1s;background:radial-gradient(circle at 80% 20%,#5b21b6aa,transparent 55%),radial-gradient(circle at 10% 90%,#f5a70033,transparent 45%)}
+#person{position:absolute;right:4%;bottom:0;height:78%;opacity:.28;transition:transform .3s,filter 1s}
+.hero-in{position:relative;max-width:1150px;margin:auto;width:100%}
+.hero-in h1{font-size:clamp(2.1rem,6vw,3.8rem);line-height:1.1;margin:10px 0 16px;max-width:700px}
+.hero-in h1 span{color:var(--gold)}
+.hero-in p{max-width:540px;opacity:.85;margin-bottom:26px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{margin:6px 0}
+.card .n{color:var(--gold);font-weight:700}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:0 20px;margin-bottom:12px;transition:border-color .2s}
+details[open]{border-color:var(--purple)}
+summary{cursor:pointer;font-weight:700;padding:18px 0;list-style:none;display:flex;justify-content:space-between;gap:12px;font-size:1.05rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details ul{margin:0 0 14px;padding-left:20px;color:var(--muted)}
+details .btn{margin-bottom:20px;font-size:.9rem;padding:10px 20px}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}
+.reveal.in{opacity:1;transform:none}
+form{display:grid;gap:12px;max-width:520px}
+input,select,textarea{font:inherit;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--text);width:100%}
+.stars button{background:none;border:0;font-size:1.6rem;color:var(--line);cursor:pointer}
+.stars button.on{color:var(--gold)}
+#cta{max-width:none;background:linear-gradient(120deg,#3b0f8c,#6d28d9);color:#fff;text-align:center}
+#cta p{max-width:520px;margin:0 auto 22px;opacity:.9}
+footer{background:var(--navy);color:#cfd0ee;padding:44px 5% calc(24px + env(safe-area-inset-bottom,0px))}
+.fgrid{max-width:1150px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+footer h4{color:#fff;margin:0 0 8px}
+footer a{display:block;text-decoration:none;margin:4px 0}
+.copy{max-width:1150px;margin:24px auto 0;border-top:1px solid #ffffff22;padding-top:14px;font-size:.8rem}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;background:#25d366;color:#fff;border-radius:999px;padding:12px 18px;font-weight:700;text-decoration:none;box-shadow:0 6px 18px #0004}
+@media(max-width:760px){.menu{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy);flex-direction:column;padding:16px 5%;gap:14px}nav.open{display:flex}#person{opacity:.15}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}.reveal{opacity:1;transform:none}}
+</style></head><body>
+<header>
+<a href="#hero"><img src="data:image/jpeg;base64,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" alt="Palingen Kreations logo"></a>
+<button class="menu" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menu">Menu</button>
+<nav id="nav" onclick="this.classList.remove('open')">
+<a href="#hero">Home</a><a href="#about">About Us</a><a href="#services">Services We Provide</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
+</nav></header>
+
+<section id="hero" data-bg="radial-gradient(circle at 80% 20%,#5b21b6aa,transparent 55%),radial-gradient(circle at 10% 90%,#f5a70033,transparent 45%)">
+<div id="bgfx"></div>
+<svg id="person" viewBox="0 0 200 300" aria-hidden="true"><defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#f5a700"/></linearGradient></defs><circle cx="100" cy="62" r="42" fill="url(#pg)"/><path d="M20 300c0-80 30-130 80-130s80 50 80 130z" fill="url(#pg)"/></svg>
+<div class="hero-in">
+<div class="tag">Nairobi, Kenya</div>
+<h1>Building Brands. <span>Creating Impact.</span></h1>
+<p>Palingen Kreations is a full-service creative and digital agency. We help businesses, institutions and creators grow with strategy, content, design and web.</p>
+<div class="row"><a class="btn" href="#services">Explore Services</a><a class="btn ghost" href="#contact">Get a Quote</a></div>
+</div></section>
+
+<section id="about" class="reveal">
+<div class="tag">About Us</div><h2>A creative partner built for growth</h2>
+<p class="sub">We combine brand thinking, content and technology so your message looks professional, reaches the right people and turns attention into customers.</p>
+<div class="grid">
+<div class="card"><div class="n">01</div><h3>Strategy first</h3><p>Every brand, post and page starts with a clear growth plan.</p></div>
+<div class="card"><div class="n">02</div><h3>One team, many skills</h3><p>Branding, social media, video, design and web under one roof.</p></div>
+<div class="card"><div class="n">03</div><h3>Simple process</h3><p>Pick a service, request a quote on WhatsApp and we get moving.</p></div>
+</div></section>
+
+<section id="services" class="reveal" data-bg="radial-gradient(circle at 20% 10%,#f5a70044,transparent 50%),radial-gradient(circle at 90% 80%,#6d28d988,transparent 50%)">
+<div class="tag">Services We Provide</div><h2>Eight ways we grow your brand</h2>
+<p class="sub">Tap a service to see what is included, then request your quote on WhatsApp.</p>
+<div id="svc"></div>
+</section>
+
+<section id="clients" class="reveal">
+<div class="tag">Our Clients</div><h2>Brands we have worked with</h2>
+<p class="sub">Churches, NGOs, schools and businesses trust us with their brand.</p>
+<div class="grid">
+<div class="card" style="text-align:center">Client logo</div><div class="card" style="text-align:center">Client logo</div><div class="card" style="text-align:center">Client logo</div><div class="card" style="text-align:center">Client logo</div>
+</div></section>
+
+<section id="reviews" class="reveal">
+<div class="tag">Reviews</div><h2>What clients say</h2>
+<div id="rlist" class="grid" style="margin-bottom:28px"></div>
+<form id="rform"><b>Leave a review</b>
+<input id="rn" placeholder="Your name" required>
+<div class="stars" id="stars"></div>
+<textarea id="rt" rows="3" placeholder="Your experience with us" required></textarea>
+<button class="btn" type="submit">Submit Review</button></form>
+</section>
+
+<section id="blog" class="reveal">
+<div class="tag">Blog</div><h2>Insights for growing brands</h2>
+<p class="sub">Marketing, design and business growth tips from our team.</p>
+<div class="grid">
+<div class="card"><div class="n">Branding</div><h3>Why consistent branding wins customers</h3><p>Coming soon</p></div>
+<div class="card"><div class="n">Social Media</div><h3>Daily posting without burning out</h3><p>Coming soon</p></div>
+<div class="card"><div class="n">Digital Marketing</div><h3>Setting up your Google Business Profile</h3><p>Coming soon</p></div>
+</div></section>
+
+<section id="contact" class="reveal">
+<div class="tag">Contact</div><h2>Get your quote</h2>
+<p class="sub">Tell us what you need. We will continue the conversation on WhatsApp.</p>
+<form id="qform">
+<input id="qn" placeholder="Your name" required>
+<select id="qs"></select>
+<select id="qm"><option>Phone / WhatsApp</option><option>Email</option></select>
+<input id="qc" placeholder="Your phone number or email" required>
+<button class="btn" type="submit">Get Your Quote on WhatsApp</button>
+</form></section>
+
+<section id="cta"><h2>Ready to grow your brand?</h2><p>Choose a service and get a tailored quote today.</p><a class="btn" href="#services">Get a Quote</a></section>
+
+<footer><div class="fgrid">
+<div><img src="data:image/jpeg;base64,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" alt="Palingen Kreations" style="height:50px;border-radius:6px"><p>Building Brands. Creating Impact.</p></div>
+<div><h4>Explore</h4><a href="#about">About Us</a><a href="#services">Services</a><a href="#blog">Blog</a><a href="#contact">Contact</a></div>
+<div><h4>Contact</h4><a href="https://wa.me/254183143963">+254 183 143 963</a><a href="mailto:hello.palingenkreations@gmail.com">hello.palingenkreations@gmail.com</a><span>Nairobi, Kenya</span></div>
+</div><div class="copy">&copy; 2026 Palingen Kreations. All rights reserved.</div></footer>
+<a class="wa" href="https://wa.me/254183143963" target="_blank" rel="noopener">WhatsApp</a>
+
+<script>
+var WA="254183143963";
+var S=[
+["Branding",["Social media positioning","Content management","Growth and brand strategy"]],
+["Social Media Management",["Growth strategy","Daily posts and engagement","Analytics and reporting","Graphic design included in the package"]],
+["Digital Marketing",["Content creation","Google Business Profile","Affiliate marketing","Brand strategy","Meta ads"]],
+["Copywriting",["Blog writing, especially for LinkedIn and website blogs"]],
+["Web Development and Design",["Website design and development","Hosting and domain setup","SEO, updates and redesign","Landing pages"]],
+["Content Creation",["Reels, videos and shots for social media","Scripts provided during the shoot","Video editing for creators, events, podcasts, individuals and businesses"]],
+["Graphic Design",["Posters","Logos","Flyers","Company profiles"]],
+["Consultations",["Business growth","Brand growth strategy","Content ideas and content strategy"]]];
+function wa(msg){window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank")}
+function quote(i){wa("Hello Palingen Kreations, I would like a quote for "+S[i][0]+".")}
+var svc=document.getElementById("svc"),qs=document.getElementById("qs");
+S.forEach(function(s,i){
+var d=document.createElement("details");
+d.innerHTML="<summary><span>"+(i+1)+". "+s[0]+"</span></summary><ul>"+s[1].map(function(x){return"<li>"+x+"</li>"}).join("")+"</ul><button class='btn' onclick='quote("+i+")'>Get a Quote for "+s[0]+"</button>";
+svc.appendChild(d);
+qs.innerHTML+="<option>"+s[0]+"</option>"});
+document.getElementById("qform").onsubmit=function(e){e.preventDefault();
+wa("Hello Palingen Kreations, I am "+qn.value+". I would like a quote for "+qs.value+". Contact me via "+qm.value+": "+qc.value)};
+var rate=5,st=document.getElementById("stars");
+function drawStars(){st.innerHTML="";for(var i=1;i<=5;i++){(function(i){var b=document.createElement("button");b.type="button";b.textContent="\u2605";if(i<=rate)b.className="on";b.onclick=function(){rate=i;drawStars()};st.appendChild(b)})(i)}}
+drawStars();
+var R=[];try{R=JSON.parse(localStorage.getItem("pk_reviews")||"[]")}catch(e){}
+function esc(t){var d=document.createElement("div");d.textContent=t;return d.innerHTML}
+function showR(){var l=document.getElementById("rlist");l.innerHTML=R.length?R.map(function(r){return"<div class='card'><div class='n'>"+"\u2605".repeat(r.s)+"</div><p>"+esc(r.t)+"</p><b>"+esc(r.n)+"</b></div>"}).join(""):"<div class='card'><p>Be the first to review Palingen Kreations.</p></div>"}
+showR();
+document.getElementById("rform").onsubmit=function(e){e.preventDefault();R.push({n:rn.value,t:rt.value,s:rate});try{localStorage.setItem("pk_reviews",JSON.stringify(R))}catch(x){}showR();e.target.reset()};
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");var b=x.target.getAttribute("data-bg");if(b)document.getElementById("bgfx").style.background=b}})},{threshold:.15});
+document.querySelectorAll(".reveal").forEach(function(el){io.observe(el)});
+var p=document.getElementById("person");
+addEventListener("scroll",function(){var y=scrollY;p.style.transform="translateY("+Math.min(y*.25,140)+"px) scale("+(1+Math.min(y/3000,.15))+")";p.style.filter="hue-rotate("+Math.min(y/6,120)+"deg)"},{passive:true});
+</script></body></html>
